@@ -6,3 +6,19 @@
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.not-sidebar {
+  min-width: 50%;
+  flex-basis: 0; /* grow from 0 to fill all space */
+  flex-grow: 666; /* nice Heydon */
+}

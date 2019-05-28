@@ -2,20 +2,20 @@
   <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 <html>
-  <img src="http://via.placeholder.com/640x360" />
+  <img src="http://via.placeholder.com/640x360" class="header-img" />
   <nav>
     <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
   </nav>
   <div class="flex-container">
     <main class="not-sidebar">
-      <article>
+      <article class="first-post">
         <header>
-          <h2>First post</h2>
+          <h2><a href="#" title="First post">First post</a></h2>
         </header>
         <footer>
           <p>This post is written by Christian</p>
@@ -33,9 +33,9 @@
           laborum.
         </p>
       </article>
-      <article>
+      <article class="default-post">
         <header>
-          <h2>Second post</h2>
+          <h2><a href="#" title="Second post">Second post</a></h2>
         </header>
         <footer>
           <p>This post is written by Christian</p>
@@ -78,7 +78,7 @@
       </article>
     </aside>
   </div>
-  <footer>
+  <footer class="main-footer">
     <p>
       Copyright &copy; <a href="#" title="1stWebDesigner">1stWebDesigner.com</a>
     </p>

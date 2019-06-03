@@ -11,7 +11,6 @@
   --highlight: hsl(12, 60%, 53%);
   --lowlight: hsl(0, 0%, 40%);
   --border-radius-default: 0.5rem;
-  --margin-default: 0.5rem auto;
 }
 
 p {
@@ -30,16 +29,17 @@ a:active {
 }
 
 .header-img {
-  width: 30%;
+  min-width: 30%;
+  max-width: 100%;
   height: auto;
-  margin: 1rem 0;
+  margin: 0.5rem auto;
   border-radius: var(--border-radius-default);
 }
 
 nav {
   background-color: var(--lowlight);
   border-radius: var(--border-radius-default);
-  margin: var(--margin-default);
+  margin: 0.5rem 0 1rem 0;
   height: 2.5rem;
 }
 
@@ -71,34 +71,37 @@ nav ul li {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  margin: -0.5rem;
 }
 
+/* simplified sidebar/not-sidebar CSS from Heydon per comment by stallain (https://gist.github.com/Heydon/c0b1d088461c64370d6fe1a19bff4b9f#gistcomment-2857405) */
 .sidebar {
-  flex-basis: 20rem;
-  flex-grow: 1;
+  flex: 1 20rem;
+  margin: 0 0.5rem;
 }
 
 .not-sidebar {
-  min-width: 50%;
-  flex-basis: 0; /* grow from 0 to fill all space */
-  flex-grow: 666; /* nice Heydon */
+  flex: 666 20rem;
+  margin: 0 0.5rem;
 }
 
 article {
   background-color: var(--white);
   border-radius: var(--border-radius-default);
-  margin: var(--margin-default);
+  margin: 0.5rem auto;
   padding: 0 1rem;
+  border: var(--white) solid 0.1rem; /* fix sidebar layout problem, set explicit border */
 }
 
-.post-title {
-  color: var(--highlight);
+h2 {
+  line-height: 1;
 }
 
 .post-info {
   font-style: italic;
   font-size: 90%;
   color: hsl(0, 0%, 60%);
+  line-height: 1;
 }
 
 .first-post {
@@ -114,7 +117,7 @@ article {
   height: 2.5rem;
   border-radius: var(--border-radius-default);
   background-color: var(--lowlight);
-  margin: var(--margin-default);
+  margin: 1rem 0 0.5rem 0;
 }
 
 .main-footer p {

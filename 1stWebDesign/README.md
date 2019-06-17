@@ -2,6 +2,16 @@
 
 Rewritten from the YouTube tutorial by 1stWebDesigner, published on March 16, 2013.
 
+## Why This Tutorial
+
+So the last time I did professional web development was 2010, and a _lot_ of the technology standards have significantly changed since. This tutorial is from 2013: more up to date than 2010 but not overwhelmingly so.
+
+I tried to educate myself on modern web development standards with freeCodeCamp, but those projects gave me acute blank page anxiety, and really halted my learning progress. I did complete a few fcc projects, but I wanted a better anchoring than my stale instincts. I also wanted to use "on the job" what I intuited were the most common modern webdev tools, namely Visual Studio Code and git.
+
+And wow, I really did hit the jackpot! I enjoyed the length and simplicity of this tutorial, and I [copied the original nearly verbatim](https://codepen.io/bgbraithwaite/pen/zbjwqZ). I recognized areas that I could improve on the original with more modern standards I had learned about in fcc and outside reading, and decided to push myself (pun intended) by doing just that.
+
+This tutorial rewrite is intended to cement my knowledge of semantic HTML5, basic Flexbox, and to a much lesser extent CSS3.
+
 ## Notes on the Original
 
 ### `<content>` Tag
@@ -12,13 +22,21 @@ I wish that I had recognized it's fishiness instinctively, but really I googled 
 
 Unfamiliar topics: Shadow DOM, Web Components, `<slot>`
 
+### Layout Oddities
+
+There are strange vertical gap irregularities I can't explain above the sidebar: too large a gap in desktop view, too narrow in "mobile" responsive view.
+
+He relies on CSS classes way more than I feel comfortable doing; if nothing else, it felt repetitive to class out semantic tags for styling. Reminds me of inline styles but ... more elaborate?
+
 ## Changes for the Rewrite
 
-### Flexbox and CSS Grid
+### Flexbox
 
 After watching [Making Future Interfaces: Algorithmic Layouts](https://www.youtube.com/watch?v=qOUtkN6M52M) by Heydon Pickering, I am both charmed and going to use the Flexbox sidebar layout he describes (with some modifications found in the comments [here](https://gist.github.com/Heydon/c0b1d088461c64370d6fe1a19bff4b9f)), but switching the right-hand side to be the sidebar that goes under.
 
-Rather than using CSS Grid for this simple layout, I'll practice Flexbox and save Grid practice for some more complex or experimental layout.
+Since this is a simple layout, I'll use it to practice Flexbox.
+
+Later: Unnecessarily complicate my life by making a version 2.0 with CSS Grid.
 
 ### Stylistic Choices
 
